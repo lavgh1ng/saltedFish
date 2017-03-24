@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.table.MainActivity">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="1">
+        <TextView
+            android:text="表一"
+            android:gravity="center"/>
+        <TableRow>
+            <TextView
+                android:text="列0"/>
+            <TextView
+                android:text="列1"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TextView
+            android:text="表二"
+            android:gravity="center"/>
+        <TableRow>
+            <TextView
+                android:text="列0不能伸展"/>
+            <TextView
+                android:text="列1可以伸展"
+                android:gravity="right"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="表三"
+            android:gravity="center"/>
+        <TableRow>
+            <TextView
+                android:text="这一列很长，将会造成下一列无法显示或显示不全 "/>
+            <TextView
+                android:text="无法看到列1" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="0">
+        <TextView
+            android:text="表四"
+            android:gravity="center"/>
+        <TableRow>
+            <TextView
+                android:text="设置了可伸缩，所以不管这一列有多长下一列都不会被挤压出去 "/>
+            <TextView
+                android:text="列1可以显示" />
+        </TableRow>
+    </TableLayout>
+</TableLayout>
