@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">智商测试</string>
+    <string name="hello">四选一：</string>
+    <string name="question">你发现地上有一块钱和一百块钱，你会怎么做？</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="other">otherActivity</string>
+</resources>
